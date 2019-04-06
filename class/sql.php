@@ -29,13 +29,7 @@ no index.php,  na chamada do método 'select', o PHP vai pro
 
 config.php para que este procure o arquivo Sql.php e 
 
-consequentemente a classe. Ao acha-la, pergunta: Qual 
-
-método é executado primeiro?  Seria o 'select'? Ou o 
-
-'query? E quais são executados na sequência?? É claro que o 
-
-construct já foi executado, isso eu entendi. E que o método 
+consequentemente a classe. o construct é  executado, o método 
 
 'setParams' chama 'setParam'.
 
@@ -47,9 +41,7 @@ muitas outras sejam executadas antes, sem percebermos
 
  o método construtor é executado assim que a classe é 
 
-instanciada. Mas, quando chamamos o método select(), 
-
-perceba que ele usa o método query(). Por isso, este 
+instanciada. Mas, quando chamamos o método select(), ele usa o método query(). Por isso, este 
 
 segundo método é completamente executado enquanto o 
 
